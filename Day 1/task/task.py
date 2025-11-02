@@ -1,14 +1,4 @@
-name = input("what is you name?")
-print(name)
-
-name2 = "Jack"
-print(name2)
-
-#assigning different values for the same variable
-name2 = "Adams"
-print(name2)
-
-#regardless of assigning different value to same variable it takes last assigned one
-length = len(name2)
-print(length)
- 
+print("Welcome to the band Name Generator.\n")
+city_name = input("What's the name of the city you grew up in?\n")
+pet_name = input("What's your pet name?\n")
+print("your band name could be " + city_name + " " + pet_name)
