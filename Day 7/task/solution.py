@@ -6,6 +6,7 @@ print(chosen_word)
 
 guess = input("Guess a letter: ").lower()
 
+#
 for letter in chosen_word:
     if letter == guess:
         print("Right")
