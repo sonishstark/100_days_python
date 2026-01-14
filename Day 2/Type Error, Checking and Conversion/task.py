@@ -12,7 +12,7 @@ int("123")
 
 print(int("123") + int("456"))
 
-name_of_the_user = input("Enter your name")
+name_of_the_user = input("Enter your name\n")
 length_of_name = len(name_of_the_user)
 
 #converting the integer to string because it can't concatenate
