@@ -1,3 +1,5 @@
+import random
+
 rock = '''
     _______
 ---'   ____)
@@ -24,20 +26,27 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-number = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors.\n"))
+game = [rock, paper, scissors]
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-if number == "2":
-    print(scissors)
-    print("Computer chose")
-    print(scissors)
-    print("It's a draw")
-elif number == "1":
-    print(paper)
-    print("Computer chose")
-    print(scissors)
-    print("You lose")
+if user_choice >= 0 and user_choice <= 2:
+    print("you chose")
+    print(game[user_choice])
+
+if user_choice < 0 or user_choice > 2:
+    print("You chose INVALID INPUT")
 else:
-    print(rock)
+    computer_choice = random.randint(0, 2)
     print("Computer Chose")
-    print(rock)
-    print("It's a draw")
+    print(game[computer_choice])
+
+    if user_choice == computer_choice:
+        print("Draw")
+    elif user_choice == 0 and computer_choice == 2:
+        print("You Win")
+    elif user_choice == 2 and computer_choice == 0:
+        print("You Lose")
+    elif user_choice > computer_choice:
+        print("You Win")
+    else:
+        print("You Lose")
