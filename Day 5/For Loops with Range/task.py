@@ -14,3 +14,7 @@ total = 0
 for number in range(101):
     total += number
 print(total)
+
+#5 number gap
+for number in range (0, 100, 5):
+    print(number)

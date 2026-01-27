@@ -9,10 +9,16 @@ for score in student_scores:
     sum += score
 
 print(sum)
-
+ #to find the largest
 large = 0
 for score in student_scores:
     if score > large:
         large = score
-
 print(large)
+
+#to find the smallest
+small = student_scores[0]
+for score in student_scores:
+    if score < small:
+        small = score
+print(small)
