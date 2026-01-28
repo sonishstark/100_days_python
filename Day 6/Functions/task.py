@@ -2,5 +2,8 @@
 def my_dob():
     print("Happy birthday")
 
-my_dob()
+def addition(a,b):
+    print(a+b)
 
+my_dob()
+addition(3,4)
