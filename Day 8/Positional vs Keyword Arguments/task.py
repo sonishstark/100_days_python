@@ -1,8 +1,10 @@
-# Functions with input
-
-def greet_with_name(name):
+# Functions with two input
+def greet_with_name(name, location):
     print(f"Hello {name}")
-    print(f"How do you do {name}?")
+    print(f"What is the weather like in {location}?")
 
+#positional argument
+greet_with_name("Jack Bauer", "Virginia")
 
-greet_with_name("Jack Bauer")
+#conditional argument
+greet_with_name(name = "John", location = "New York")
